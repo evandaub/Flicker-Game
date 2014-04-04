@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flicker</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.11.0.js"></script>
+</head>
+
+<body>
+	<section class="background">
+    	<h1 class="title">Flicker</h1>
+        	<section class="rectangleContainer">
+        	<div class="yellowCircle"><h2 class="text">Instructions</h2></div>
+            <a href="game.html"><div class="greenCircle"><h2 class="text">Play</h2>
+            </div></a>
+            <div class="blueCircle"><h2 class="text">About</h2></div>
+            <div class="redCircle"><h2 class="text">Credits</h2></div>
+    		</section>
+    </section>
+    <section id="sect">In order to play the game, you must follow these instructions. When you start out you will witness the game flashing a pattern of lights remember this pattern well. it will be needed in order for you to surpass the starting level. when the pattern finishes your turn will begin do not worry you will be alerted when its your turn. Just touch the circles that lit up. in the same order in which they lit up.if you do so success is yours. If not do not fear just try again!</section>
+    
+    <script>
+$('#sect').css('display', 'none');
+
+$('.yellowCircle').click(function(){
+	$('#sect').slideToggle(550);
+});	
+
+</script>
+<section class="sectTwo">This is the game of flicker and was created by PTI Web and Interactive Students Evan Daub and Joshua Ghrist, This game is similar in concept to a simon says game, where players must follow patterns to complete levels and advance in the game.</section>
+<script>
+	$('.sectTwo').css('display', 'none');
+	
+	$('.blueCircle').click(function(){
+	$('.sectTwo').slideToggle(550);	
+});
+</script>
+<section class="sectThree">Evan Daub - Programmer and game developer; <br>
+Joshua Ghrist - Programmer and Game Styling; <br>
+Frank Schurter - Course Instructor
+
+</section>
+
+<script>
+
+$('.sectThree').css('display', 'none');
+
+$('.redCircle').click(function(){
+	$('.sectThree').slideToggle(550);	
+});
+</script>
+</body>
+
+</html>
